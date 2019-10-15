@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app1">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>PWA2019</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</head>
+
+<body class="workarea" ng-controller="Ctrl1 as that">
+
+    <div class="container">
+
+        <h1>Let's start!</h1>
+
+        This is an initial commit and starting point to further considerations.
+
+        <hr />
+
+        <p>meetingType:</p>
+        <p ng-bind="ctrl.data.meetingType"></p>
+        <p>topic:</p>
+        <p ng-bind="ctrl.data.topic"></p>
+        <p>attempt:</p>
+        <p ng-bind="ctrl.data.attempt"></p>
+        <p>date:</p>
+        <p ng-bind="ctrl.data.date"></p>
+
+        <hr />
+        <input type="number" ng-model="that.dataSent.increment" />
+        <button ng-click="that.buttonClicked()">Send</button>
+    </div>
+
+    <script src="/js/angular.min.js"></script>
+    <script src="/js/ui-bootstrap-tpls.min.js"></script>
+
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
